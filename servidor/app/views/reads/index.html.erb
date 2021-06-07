@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Reads</h1>
+
+<%= turbo_stream_from :reads %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Temperature</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  
+  <tbody id="reads">
+    <%= render @reads %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Read', new_read_path %>
