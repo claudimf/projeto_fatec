@@ -1,6 +1,18 @@
 class ReadsController < ApplicationController
   before_action :set_read, only: %i[ show edit update destroy ]
 
+  # http://localhost:3000/reads/get_read?temperature=20
+  def get_read
+    @read = Read.new
+    @read.temperature = params[:temperature].to_f
+
+    if @read.save
+     render json: @read, status: :created
+    else
+     render json: @read.errors, status: :unprocessable_entity
+    end
+  end
+
   # GET /reads or /reads.json
   def index
     @reads = Read.all
