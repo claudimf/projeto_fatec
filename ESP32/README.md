@@ -2,13 +2,6 @@
 
 👋 Olá, Seja Bem-vindo(a) ao 'Sistema embarcado com MicroPython' da Fatec.
 
-# Notas das aulas:
-
-Para executar um script python, faça conforme o exemplo abaixo:
-```sh
-docker-compose run --rm app python aulas/01/01.py
-```
-
 # Ligar a placa no Linux
 1. Conecte a ESP32 na porta USB.
 2. Abra o terminal e acesse a pasta '/dev'
@@ -62,13 +55,4 @@ thonny
 
 [16° Micropython example](https://forum.micropython.org/viewtopic.php?t=5496)
 
-https://www.youtube.com/watch?v=Kqnw9jvceSg
-
-https://docs.micropython.org/en/latest/esp8266/tutorial/network_tcp.html
-https://www.youtube.com/watch?v=ELOTp79MPXA
-https://www.youtube.com/watch?v=lvmNLuHj25o
-
-
-https://docs.micropython.org/en/latest/reference/packages.html
-https://docs.python.org/3/library/urllib.request.html#urllib.request.Request.method
-https://github.com/fiorefr/esp32-clientweb/blob/master/urequests2.py
+[17° MicroPython #5 - JSON & Network Modules + Practical Example](https://www.youtube.com/watch?v=Kqnw9jvceSg)
