@@ -1,23 +1,10 @@
-# projeto_fatec
+# Projeto de Conclusão do curso 'Sistema Embarcado com ESP32 e Micropython' da Fatec Itaquera - Prof. Miguel Reale
 
-https://www.youtube.com/watch?v=MRv4XGu6QkY
-https://dev.to/mikerogers0/real-time-partial-updates-in-ruby-on-rails-using-hotwire-rails-1j1j
+## Objetivo:
+### Demonstrar os conhecimentos adquiridos durante o curso.
 
-https://engineering.musefind.com/make-your-rails-app-real-time-in-under-ten-minutes-cd5bd4a47f61
+## Sobre o projeto:
+### Enviar informações de leitura de temperatura de um módulo DHT-11 via requisição do ESP32 com o uso de Micropython a uma aplicação em Ruby On Rails que exibirá o valor em tempo real através do Hotwire.
 
-https://mentalized.net/journal/2018/05/18/getting-realtime-with-rails/
-
-https://stackoverflow.com/questions/8497668/disable-unit-testing-generators-in-rails
-https://guides.rubyonrails.org/generators.html#customizing-your-workflow
-
-
-https://github.com/hotwired/turbo-rails
-https://github.com/hotwired/turbo-rails/blob/main/app/helpers/turbo/streams_helper.rb
-
-https://github.com/hotwired/turbo-rails/blob/main/app/models/concerns/turbo/broadcastable.rb
-
-
-https://btihen.me/post_ruby_rails/rails_6_1_hotwire_simple_realtime/
-
-
-sudo chown -R $USER:$USER .
+# [ESP32](https://github.com/claudimf/projeto_fatec/tree/main/ESP32)
+# [Servidor de leitura](https://github.com/claudimf/projeto_fatec/tree/main/servidor)

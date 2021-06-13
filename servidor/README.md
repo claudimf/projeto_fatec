@@ -12,6 +12,9 @@
     - 🐳 [Docker Compose](https://docs.docker.com/compose/) Deve estar instalado.
     - **💡 Dica:** [Documentação do Docker](https://docs.docker.com/)
 
+# Configurando o projeto:
+- ## [Atualização de 'partials' em tempo real utilizando Ruby On Rails](https://dev.to/mikerogers0/real-time-partial-updates-in-ruby-on-rails-using-hotwire-rails-1j1j)
+
 # Instalando
 
 ## 🐳 Modo Desenvolvimento com Docker
@@ -55,3 +58,7 @@ docker-compose down && docker-compose up
 - [Redis 4.0 - Adaptador para rodar o Action Cable](https://github.com/redis/redis-rb)
 - [Postgres 13.0 - Banco de dados](https://hub.docker.com/_/postgres)
 - [Adaptador de Postgres para RoR versão 1.1](https://github.com/ged/ruby-pg)
+
+# Referencias utilizadas:
+[1° Rails 6.1 - Hotwire (Simple Realtime SPA)](https://btihen.me/post_ruby_rails/rails_6_1_hotwire_simple_realtime/)
+[2° Turbo Rails](https://github.com/hotwired/turbo-rails)
