@@ -1,5 +1,6 @@
 <tr id="<%= dom_id read %>">
   <td><%= read.temperature %></td>
+  <td><%= read.created_at %></td>
   <td><%= link_to 'Show', read %></td>
   <td><%= link_to 'Edit', edit_read_path(read) %></td>
   <td><%= link_to 'Destroy', read, method: :delete, data: { confirm: 'Are you sure?' } %></td>

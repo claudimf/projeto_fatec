@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Reads</h1>
+<%= link_to 'Limpar registros', destroy_all_reads_path %>
 
 <%= turbo_stream_from :reads %>
 
@@ -13,7 +14,9 @@
   </thead>
   
   <tbody id="reads">
+    <% if @reads %>
     <%= render @reads %>
+    <% end %>
   </tbody>
 </table>
 

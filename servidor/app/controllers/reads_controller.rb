@@ -1,8 +1,8 @@
 class ReadsController < ApplicationController
   before_action :set_read, only: %i[ show edit update destroy ]
 
-  # http://localhost:3000/reads/get_read?temperature=20
-  def get_read
+  # http://localhost:3000/send_read?temperature=20
+  def send_read
     @read = Read.new
     @read.temperature = params[:temperature].to_f
 
@@ -13,9 +13,15 @@ class ReadsController < ApplicationController
     end
   end
 
+  # GET /destroy_all
+  def destroy_all
+    Read.destroy_all
+    redirect_to reads_path
+  end
+
   # GET /reads or /reads.json
   def index
-    @reads = Read.all
+    @reads = Read.all.order(created_at: :desc)
   end
 
   # GET /reads/1 or /reads/1.json
