@@ -1,10 +1,11 @@
 class ReadsController < ApplicationController
   before_action :set_read, only: %i[ show edit update destroy ]
 
-  # http://localhost:3000/send_read?temperature=20
+  # http://localhost:3000/send_read?temperature=20&time_stamp="13/06/2021 - 20:06:45 -0300"
   def send_read
     @read = Read.new
     @read.temperature = params[:temperature].to_f
+    @read.time_stamp = params[:time_stamp].to_datetime
 
     if @read.save
      render json: @read, status: :created
@@ -16,7 +17,7 @@ class ReadsController < ApplicationController
   # GET /destroy_all
   def destroy_all
     Read.destroy_all
-    redirect_to reads_path
+    redirect_to root_path
   end
 
   # GET /reads or /reads.json

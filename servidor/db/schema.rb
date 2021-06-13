@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2021_06_06_232054) do
 
   create_table "reads", force: :cascade do |t|
     t.decimal "temperature", precision: 12, scale: 2
+    t.datetime "time_stamp", precision: 6
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
