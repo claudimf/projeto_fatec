@@ -1,27 +1,57 @@
-# README
+# Servidor de leitura
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+👋 Olá, Seja Bem-vindo(a) ao Servidor de leitura.
 
-Things you may want to cover:
+# Exigências
 
-* Ruby version
+**:warning: Atenção:** É necessário que os desenvolvedores usem o Docker no seu ambiente de desenvolvimento.
 
-* System dependencies
+- **🛠 Modo Desenvolvimento Docker**
+    - :computer: [Linux Ubuntu LTS](https://ubuntu.com/download/desktop)
+    - 🐳 [Docker](https://docs.docker.com/engine/installation/) Deve estar instalado.
+    - 🐳 [Docker Compose](https://docs.docker.com/compose/) Deve estar instalado.
+    - **💡 Dica:** [Documentação do Docker](https://docs.docker.com/)
 
-* Configuration
+# Instalando
 
-* Database creation
+## 🐳 Modo Desenvolvimento com Docker
 
-* Database initialization
+Após instalar o docker e docker-compose, estando na pasta raiz do projeto, execute:
 
-* How to run the test suite
+```sh
+docker-compose up
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Para se certificar que os seus containers subiram corretamente, todos os containers deve estar com o status `UP`, execute:
 
-* Deployment instructions
+```sh
+docker-compose ps -a
+```
 
-* ...
+Para acessar o container da aplicação, execute:
 
+```sh
+docker-compose run --rm web bash
+```
 
-https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-sensor-de-umidade-e-temperatura-dht11
+Para acessar a instância do banco de dados, execute:
+
+```sh
+docker exec -it [nome do db] bash
+```
+
+Para derrubar e subir a instância do docker novamente, execute:
+
+```sh
+docker-compose down && docker-compose up
+```
+
+🚀 :clap: Para visualizar o sistema basta acessar no navegador no endereço: [localhost:3000](localhost:3000)
+
+# Tecnologias utilizadas
+
+- [Ruby on Rails 6.1.3 - Para a aplicação](https://api.rubyonrails.org/v6.1.3.2/)
+- [HotWire Rails - Para a atualização dos dados](https://github.com/hotwired/hotwire-rails)
+- [Redis 4.0 - Adaptador para rodar o Action Cable](https://github.com/redis/redis-rb)
+- [Postgres 13.0 - Banco de dados](https://hub.docker.com/_/postgres)
+- [Adaptador de Postgres para RoR versão 1.1](https://github.com/ged/ruby-pg)
