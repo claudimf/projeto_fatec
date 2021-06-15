@@ -6,5 +6,7 @@
 ## Sobre o projeto:
 ### Enviar informações de leitura de temperatura de um módulo DHT-11 via requisição do ESP32 com o uso de Micropython a uma aplicação em Ruby On Rails que exibirá o valor em tempo real através do Hotwire.
 
+![projeto](https://raw.githubusercontent.com/claudimf/projeto_fatec/main/fatec_202106150737.gif)
+
 # [ESP32](https://github.com/claudimf/projeto_fatec/tree/main/ESP32)
 # [Servidor de leitura](https://github.com/claudimf/projeto_fatec/tree/main/servidor)

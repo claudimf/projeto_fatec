@@ -2,6 +2,18 @@
 
 👋 Olá, Seja Bem-vindo(a) ao 'Sistema embarcado com MicroPython' da Fatec.
 
+# Lista de material:
+
+* [Placa DOIT ESP32 Bluetooth e WiFi](https://www.baudaeletronica.com.br/placa-doit-esp32-bluetooth-e-wifi.html) - 1 peça
+
+* [Módulo Sensor de Umidade e Temperatura DHT11](https://www.baudaeletronica.com.br/modulo-sensor-de-umidade-e-temperatura-dht11.html?gclid=CjwKCAjwn6GGBhADEiwAruUcKlkDa1f-6k0j_LFV7j8PYV4F2rHlHoGEVJF-KmEFXHk7QO1j4m3UfBoC76oQAvD_BwE) - 1 peça
+
+* [Jumper 20cm - Fêmea / Fêmea](https://www.baudaeletronica.com.br/kit-jumper-premium-20cm-femea-femea.html) - 3 peças
+
+# Pinagem:
+
+![pinout](https://raw.githubusercontent.com/claudimf/projeto_fatec/main/ESP32/pinout.png)
+
 # Ligar a placa no Linux
 1. Conecte a ESP32 na porta USB.
 2. Abra o terminal e acesse a pasta '/dev'
@@ -16,10 +28,6 @@ sudo chmod 777 ttyUSB0
 ```sh
 thonny
 ```
-
-# Lista de material:
-
-* [Placa DOIT ESP32 Bluetooth e WiFi](https://www.baudaeletronica.com.br/placa-doit-esp32-bluetooth-e-wifi.html) - 1 peça
 
 # Referências utilizadas
 

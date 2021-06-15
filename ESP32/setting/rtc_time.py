@@ -2,6 +2,7 @@ import machine
 import time
 from machine import RTC
 
+
 rtc = RTC()
 rtc.datetime((2021, 5, 11, 0, 15, 51, 0, 0)) # (ano, mês, dia, dia da semana, hora, minuto, segundo, microsegundo)
 while True:
